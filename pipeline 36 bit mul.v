@@ -3,13 +3,13 @@
 module mul(clk, a, b, mul);
 	
 	input         clk;
-	input  [17:0] a;
-	input  [17:0] b;
-	output [35:0] mul;
-	reg    [35:0] mul;
-	reg    [17:0] a_in, b_in;
-	wire   [35:0] mul_res;
-	reg    [35:0] pipe_1, pipe_2, pipe_3;
+	input  [15:0] a;
+	input  [15:0] b;
+	output [31:0] mul;
+	reg    [31:0] mul;
+	reg    [15:0] a_in, b_in;
+	wire   [31:0] mul_res;
+	reg    [31:0] pipe_1, pipe_2, pipe_3;
 
 	   assign mul_res = a_in * b_in;
 
